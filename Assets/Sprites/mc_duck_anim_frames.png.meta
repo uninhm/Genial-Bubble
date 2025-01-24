@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mc_duck_anim_frames_0: 8409009661690991732
+      mc_duck_anim_frames_1: 3721244368780989239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
