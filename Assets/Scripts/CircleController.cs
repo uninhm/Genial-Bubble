@@ -12,6 +12,8 @@ public class CircleController : MonoBehaviour
     Rigidbody2D rb;
     Collider2D col;
     Collider2D floorCol;
+    Transform tr;
+    Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +23,8 @@ public class CircleController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         col = rb.GetComponent<Collider2D>();
         floorCol = GameObject.Find("Floor").GetComponent<Collider2D>();
+        tr = GetComponent<Transform>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class CircleController : MonoBehaviour
         if (moveAction.IsPressed())
         {
             rb.AddForce(moveAction.ReadValue<Vector2>() * playerSpeed);
+            tr.localScale = new Vector2(moveAction.ReadValue<Vector2>().x, 1);
         }
         else
         {
@@ -43,6 +48,7 @@ public class CircleController : MonoBehaviour
         // rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, maxSpeed);
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
         rb.linearVelocity = vel;
+        anim.SetFloat("Speed", Mathf.Abs(vel.x));
 
         wasTouchingFloor = isTouchingFloor;
 
