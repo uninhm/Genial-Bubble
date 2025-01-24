@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "bulle_enfonc\xE9_0": -4794060939166554090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

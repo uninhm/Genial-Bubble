@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bulle(withoutBorders)_idle_anim_frames_0: 5034945371790932549
+      bulle(withoutBorders)_idle_anim_frames_1: 2693600894137621291
+      bulle(withoutBorders)_idle_anim_frames_2: -1305456531137540880
+      bulle(withoutBorders)_idle_anim_frames_3: 4662167000281002085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
