@@ -1,14 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CircleController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public int jumpForce = 15;
     public int playerSpeed = 10;
     public int maxSpeed = 6;
     bool wasTouchingFloor;
+
+    public Transform shootingPoint;
+    public GameObject Bubble;
+
     InputAction jumpAction;
     InputAction moveAction;
+    InputAction throwBubble;
+
     Rigidbody2D rb;
     Collider2D col;
     Collider2D floorCol;
@@ -20,6 +26,7 @@ public class CircleController : MonoBehaviour
     {
         jumpAction = InputSystem.actions.FindAction("Jump");
         moveAction = InputSystem.actions.FindAction("Move");
+        throwBubble = InputSystem.actions.FindAction("Attack");
         rb = GetComponent<Rigidbody2D>();
         col = rb.GetComponent<Collider2D>();
         floorCol = GameObject.Find("Floor").GetComponent<Collider2D>();
