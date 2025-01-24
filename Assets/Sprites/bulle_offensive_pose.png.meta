@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bulle_offensive_pose_0: -4108502641969186312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
