@@ -52,29 +52,11 @@ public class PlayerController : MonoBehaviour
         {
             vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
         }
-        // rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, maxSpeed);
+
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
         rb.linearVelocity = vel;
         anim.SetFloat("Speed", Mathf.Abs(vel.x));
 
         wasTouchingFloor = isTouchingFloor;
-
-        /*        if (jumpAction.WasPressedThisFrame())
-                {
-                    if (col.IsTouching(floorCol))
-                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                }
-                Vector2 vel = rb.linearVelocity;
-                if (moveAction.IsPressed())
-                {
-                    vel.x = playerSpeed * moveAction.ReadValue<Vector2>().x;
-                }
-                else
-                {
-                    vel.x = (float)(vel.x - vel.x * 0.95 * Time.deltaTime);
-                }
-                // rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, maxSpeed);
-                vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
-                rb.linearVelocity = vel;*/
     }
 }
