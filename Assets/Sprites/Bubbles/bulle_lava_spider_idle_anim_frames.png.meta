@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bulle_lava_spider_idle_anim_frames_0: -4975353780337061232
+      bulle_lava_spider_idle_anim_frames_1: -1850420539629537909
+      bulle_lava_spider_idle_anim_frames_2: -3071222094567901388
+      bulle_lava_spider_idle_anim_frames_3: 2533127773313122619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
