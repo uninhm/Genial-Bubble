@@ -35,6 +35,12 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
+    public void Jump(int force)
+    {
+        rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        anim.Play("Jump");
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,8 +60,7 @@ public class PlayerController : MonoBehaviour
         bool isTouchingFloor = IsGrounded();
         if (isTouchingFloor && (jumpAction.WasPressedThisFrame() || jumpAction.IsPressed() && !wasTouchingFloor))
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            anim.Play("Jump");
+            Jump(jumpForce);
         }
         Vector2 vel = rb.linearVelocity;
         if (moveAction.IsPressed())
