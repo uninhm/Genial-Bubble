@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      snowman_throw_anim_frames_0: 5307307886785856558
+      snowman_throw_anim_frames_1: -480596221807697458
+      snowman_throw_anim_frames_2: -6301768235836075578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
