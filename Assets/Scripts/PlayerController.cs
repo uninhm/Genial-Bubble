@@ -74,7 +74,8 @@ public class PlayerController : MonoBehaviour
         {
             if (currentBubble != null)
             {
-                Destroy(currentBubble);
+                currentBubble.GetComponent<Animator>().Play("BubblePop");
+                Destroy(currentBubble, 2f);
             }
 
             currentBubble = Instantiate(ResolveBubble, shootingPoint.position, Quaternion.identity);
