@@ -30,6 +30,8 @@ public class ThrowedBubble : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        Enemy enemy = collision.GetComponent<Enemy>();
+        enemy.takeShot();
+        Destroy(gameObject);
     }
 }
