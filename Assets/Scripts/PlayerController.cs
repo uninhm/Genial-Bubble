@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,6 +20,8 @@ public class PlayerController : MonoBehaviour
     Collider2D col;
     Transform tr;
     Animator anim;
+
+    public int direction = 1;
 
     float distToGround;
 
@@ -52,11 +55,18 @@ public class PlayerController : MonoBehaviour
         if (moveAction.IsPressed())
         {
             rb.AddForce(moveAction.ReadValue<Vector2>() * playerSpeed);
-            tr.localScale = new Vector2(moveAction.ReadValue<Vector2>().x, 1);
+            if (moveAction.ReadValue<Vector2>().x > 0)
+                direction = 1;
+            else direction = -1;
+            tr.localScale = new Vector3(direction, 1, 1);
         }
         else
         {
             vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
+        }
+        if(throwBubble.WasPressedThisFrame())
+        {
+            Instantiate(Bubble, shootingPoint.position, transform.rotation);
         }
 
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
