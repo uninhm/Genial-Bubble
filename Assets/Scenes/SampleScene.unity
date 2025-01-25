@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 652137436}
   - component: {fileID: 652137440}
   - component: {fileID: 652137441}
+  - component: {fileID: 652137442}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -653,6 +654,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &652137442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652137435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b62a24fdc48444e8eb004c188db406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnDelay: 0
+  fadeOutDuration: 1
+  cam: {fileID: 519420032}
 --- !u!4 &675721970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8250938767811616420, guid: 86a1306740420dd4f9993787fdd569a9, type: 3}
@@ -1641,6 +1657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420032}
   speed: 3
+  activated: 0
   targetX: 20
 --- !u!61 &1774363916
 BoxCollider2D:
