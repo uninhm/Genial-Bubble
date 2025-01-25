@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5524674133100995998}
   m_Layer: 0
   m_Name: OffensiveBubble
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

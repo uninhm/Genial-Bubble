@@ -39,9 +39,13 @@ public class PlayerController : MonoBehaviour
     {
         // if (Mathf.Abs(rb.linearVelocityY) > 0.01) return false;
         RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.down * col.bounds.extents.y + Vector3.left * col.bounds.extents.x, Vector2.down);
+        if (hit.collider && hit.collider.gameObject.CompareTag("Projectile"))
+            return false;
         if (hit.collider && hit.distance < 0.1f)
             return true;
         hit = Physics2D.Raycast(transform.position + Vector3.down * col.bounds.extents.y + Vector3.right * col.bounds.extents.x, Vector2.down);
+        if (hit.collider && hit.collider.gameObject.CompareTag("Projectile"))
+            return false;
         if (hit.collider && hit.distance < 0.1f)
             return true;
         return false;
