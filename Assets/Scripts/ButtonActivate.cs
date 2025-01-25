@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonActivate : MonoBehaviour
 {
     public GameObject block;
+    public Text text;
     Rigidbody2D rb;
     private Vector3 initialPosition;
     private Quaternion initialRotation;
