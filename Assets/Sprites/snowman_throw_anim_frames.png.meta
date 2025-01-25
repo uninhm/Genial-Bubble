@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: a2fa637474cdb204696007ed01e7f52b
+guid: cbd4239673eb5a1428ea074705702488
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6973724511794653450
-    second: OffensiveBubbleThrowed_0
+      213: 5307307886785856558
+    second: snowman_throw_anim_frames_0
   - first:
-      213: -7802230459570119033
-    second: OffensiveBubbleThrowed_1
+      213: -480596221807697458
+    second: snowman_throw_anim_frames_1
+  - first:
+      213: -6301768235836075578
+    second: snowman_throw_anim_frames_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OffensiveBubbleThrowed_0
+      name: snowman_throw_anim_frames_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 44
-        width: 26
-        height: 8
+        x: 5
+        y: 31
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f69b01418a583f90800000000000000
-      internalID: -6973724511794653450
+      spriteID: e240089576857a940800000000000000
+      internalID: 5307307886785856558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OffensiveBubbleThrowed_1
+      name: snowman_throw_anim_frames_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 12
-        width: 25
-        height: 8
+        x: 40
+        y: 31
+        width: 20
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +156,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78e17992cb8e8b390800000000000000
-      internalID: -7802230459570119033
+      spriteID: ec1e1c658449459f0800000000000000
+      internalID: -480596221807697458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_throw_anim_frames_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1962e7d2f9b88a0800000000000000
+      internalID: -6301768235836075578
       vertices: []
       indices: 
       edges: []
@@ -172,9 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      OffensiveBubbleThrowed_0: -6973724511794653450
-      OffensiveBubbleThrowed_1: -7802230459570119033
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
