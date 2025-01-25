@@ -3146,7 +3146,7 @@ GameObject:
   - component: {fileID: 39703153121002146}
   - component: {fileID: 2256592093641292400}
   m_Layer: 0
-  m_Name: Niveau 1 (stage a)
+  m_Name: Stage A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
