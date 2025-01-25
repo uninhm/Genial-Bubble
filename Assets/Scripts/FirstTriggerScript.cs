@@ -1,0 +1,38 @@
+using UnityEngine;
+
+public class FirstTriggerScript : MonoBehaviour
+{
+    public Transform cam;
+    public float speed = 1;
+    PlayerController playerController;
+    bool moving = false;
+    bool activated = false;
+    public float targetX = 23;
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (!activated && collider.gameObject.name == "Player")
+        {
+            moving = true;
+            playerController = collider.gameObject.GetComponent<PlayerController>();
+            playerController.stopped = true;
+            activated = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (moving)
+        {
+            if (cam.position.x < targetX)
+            {
+                cam.Translate(Vector3.right * speed * Time.deltaTime);
+            }
+            else
+            {
+                moving = false;
+                playerController.stopped = false;
+            }
+        }
+    }
+}

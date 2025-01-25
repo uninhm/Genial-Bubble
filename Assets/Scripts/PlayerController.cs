@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public int playerSpeed = 10;
     public int maxSpeed = 6;
     public float floorDistance;
+    public bool stopped = false;
     bool wasTouchingFloor;
 
     public Transform shootingPoint;
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
             Jump(jumpForce);
         }
         Vector2 vel = rb.linearVelocity;
-        if (moveAction.IsPressed())
+        if (moveAction.IsPressed() && !stopped)
         {
             rb.AddForce(moveAction.ReadValue<Vector2>() * playerSpeed);
             if (moveAction.ReadValue<Vector2>().x > 0)
