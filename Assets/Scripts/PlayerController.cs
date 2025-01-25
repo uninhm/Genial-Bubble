@@ -17,9 +17,15 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rb;
     Collider2D col;
-    Collider2D floorCol;
     Transform tr;
     Animator anim;
+
+    float distToGround;
+
+    bool IsGrounded()
+    {
+        return Physics2D.Raycast(transform.position, -Vector2.up, distToGround + 0.1f);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,15 +35,15 @@ public class PlayerController : MonoBehaviour
         throwBubble = InputSystem.actions.FindAction("Attack");
         rb = GetComponent<Rigidbody2D>();
         col = rb.GetComponent<Collider2D>();
-        floorCol = GameObject.Find("Floor").GetComponent<Collider2D>();
         tr = GetComponent<Transform>();
         anim = GetComponent<Animator>();
+        distToGround = col.bounds.extents.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool isTouchingFloor = col.IsTouching(floorCol);
+        bool isTouchingFloor = IsGrounded();
         if (isTouchingFloor && (jumpAction.WasPressedThisFrame() || jumpAction.IsPressed() && !wasTouchingFloor))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
