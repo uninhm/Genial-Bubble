@@ -1,5 +1,12 @@
 using UnityEngine;
 
+public class Resetable : MonoBehaviour
+{
+    virtual public void Reset()
+    {
+    }
+}
+
 public class PlayerDammage : MonoBehaviour
 {
     public float respawnDelay = 1f;
@@ -12,6 +19,7 @@ public class PlayerDammage : MonoBehaviour
     private bool isWaitingToRespawn = false;
     public Transform cam;
     private ParentCheckpointScript checkpoints;
+    public Resetable[] resetOnRespawn;
 
     void Start()
     {
@@ -59,8 +67,10 @@ public class PlayerDammage : MonoBehaviour
         gameObject.SetActive(true);
         isWaitingToRespawn = false;
         cam.position = checkpoints.cameraPos;
-        GameObject.Find("firstTrigger").GetComponent<FirstTriggerScript>().activated = false;
-        GameObject.Find("SpiderTrigger").GetComponent<SpiderGenerator>().activated = false;
+        /*GameObject.Find("firstTrigger").GetComponent<FirstTriggerScript>().activated = false;
+        GameObject.Find("SpiderTrigger").GetComponent<SpiderGenerator>().activated = false;*/
+        foreach (Resetable r in resetOnRespawn)
+            r.Reset();
         GetComponent<PlayerController>().stopped = false;
     }
 

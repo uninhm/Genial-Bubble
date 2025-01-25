@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class SpiderGenerator : MonoBehaviour
+public class SpiderGenerator : Resetable
 {
     public bool activated = false;
     public GameObject Spider;
@@ -16,4 +16,8 @@ public class SpiderGenerator : MonoBehaviour
         }
     }
 
+    override public void Reset()
+    {
+        activated = false;
+    }
 }

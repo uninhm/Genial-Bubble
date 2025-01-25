@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FirstTriggerScript : MonoBehaviour
+public class FirstTriggerScript : Resetable
 {
     public Transform cam;
     public float speed = 1;
@@ -34,5 +34,10 @@ public class FirstTriggerScript : MonoBehaviour
                 playerController.stopped = false;
             }
         }
+    }
+
+    override public void Reset()
+    {
+        activated = false;
     }
 }
