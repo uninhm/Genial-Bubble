@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: c06163d4d05110043b74cc2268ed8452
+guid: fd52c9276adfdb14abb4f773574327c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8311311957333722775
-    second: clouds-whiter-1_0
-  - first:
-      213: -8019660582995194354
-    second: clouds-whiter-1_1
-  - first:
-      213: 1233754854382495480
-    second: clouds-whiter-1_2
-  - first:
-      213: 2812071606676887186
-    second: clouds-whiter-1_3
-  - first:
-      213: -5981552680278843041
-    second: clouds-whiter-1_4
+      213: 8382717070696663976
+    second: spikes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 4
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clouds-whiter-1_0
+      name: spikes_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 35
-        width: 13
-        height: 9
+        x: 0
+        y: 0
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7964552a036b75370800000000000000
-      internalID: 8311311957333722775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds-whiter-1_1
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 35
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0e8e53903174b090800000000000000
-      internalID: -8019660582995194354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds-whiter-1_2
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 28
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f6e16bd08d2f1110800000000000000
-      internalID: 1233754854382495480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds-whiter-1_3
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 26
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29610fe2a3c760720800000000000000
-      internalID: 2812071606676887186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds-whiter-1_4
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 26
-        width: 14
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f51a1b667814dfca0800000000000000
-      internalID: -5981552680278843041
+      spriteID: 8ab4a7323c4655470800000000000000
+      internalID: 8382717070696663976
       vertices: []
       indices: 
       edges: []
@@ -247,12 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      clouds-whiter-1_0: 8311311957333722775
-      clouds-whiter-1_1: -8019660582995194354
-      clouds-whiter-1_2: 1233754854382495480
-      clouds-whiter-1_3: 2812071606676887186
-      clouds-whiter-1_4: -5981552680278843041
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

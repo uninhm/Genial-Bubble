@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerDammage : MonoBehaviour
 {
-    public float respawnDelay = 3f;
+    public float respawnDelay = 1f;
     public float fadeOutDuration = 1f;
     private Vector3 initialPosition;
     private Quaternion initialRotation;
@@ -10,6 +10,7 @@ public class PlayerDammage : MonoBehaviour
     private float fadeStartTime;
     private bool isFading = false;
     private bool isWaitingToRespawn = false;
+    public Transform cam;
 
     void Start()
     {
@@ -44,6 +45,7 @@ public class PlayerDammage : MonoBehaviour
         {
             isFading = true;
             fadeStartTime = Time.time;
+            GetComponent<PlayerController>().stopped = true;
         }
     }
 
@@ -54,6 +56,9 @@ public class PlayerDammage : MonoBehaviour
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
         gameObject.SetActive(true);
         isWaitingToRespawn = false;
+        cam.position = new Vector3(0, 0, -10);
+        GameObject.Find("firstTrigger").GetComponent<FirstTriggerScript>().activated = false;
+        GetComponent<PlayerController>().stopped = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
