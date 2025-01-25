@@ -60,6 +60,7 @@ public class PlayerDammage : MonoBehaviour
         isWaitingToRespawn = false;
         cam.position = checkpoints.cameraPos;
         GameObject.Find("firstTrigger").GetComponent<FirstTriggerScript>().activated = false;
+        GameObject.Find("SpiderTrigger").GetComponent<SpiderGenerator>().activated = false;
         GetComponent<PlayerController>().stopped = false;
     }
 
