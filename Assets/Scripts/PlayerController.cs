@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
         {
             cooldownUntilNextPress = Time.time + CooldownTime;
             Instantiate(Bubble, shootingPoint.position, transform.rotation);
+            anim.Play("throw");
         }
 
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
