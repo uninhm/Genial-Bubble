@@ -1,7 +1,5 @@
 %YAML 1.1
-
 %TAG !u! tag:unity3d.com,2011:
-
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,10 +15,10 @@ MonoBehaviour:
     fileID: 13312
     guid: '0000000000000000e000000000000000'
     type: 0
-  m_Name: tile_302
+  m_Name: tile_208 1
   m_EditorClassIdentifier: ''
   m_Sprite:
-    fileID: 21300604
+    fileID: 21300416
     guid: 3cedaf4b269f4e608d3fab8438b0b37f
     type: 3
   m_Color:
