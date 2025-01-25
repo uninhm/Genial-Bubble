@@ -27,4 +27,4 @@ public class ButtonActivate : MonoBehaviour
             other.transform.position = initialPosition;
         }
     }
-}
+}   
