@@ -1772,7 +1772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5556328942003718311, guid: 81d59b29694e936469afc32ea9b0a3b7, type: 3}
       propertyPath: m_Name
-      value: Niveau 1 (stage a)
+      value: Stage A
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4541434553192868375, guid: 81d59b29694e936469afc32ea9b0a3b7, type: 3}
@@ -2477,5 +2477,5 @@ SceneRoots:
   - {fileID: 1774363914}
   - {fileID: 1077289019}
   - {fileID: 1071664189}
-  - {fileID: 1879682576}
   - {fileID: 632563015}
+  - {fileID: 1879682576}
