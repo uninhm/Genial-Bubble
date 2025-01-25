@@ -28,7 +28,8 @@ public class FallingFloorController : Resetable
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Invoke("Fall", delay);
+        if (collision.transform.position.y > rb.position.y)
+            Invoke("Fall", delay);
         if (collision.gameObject.CompareTag("Enemy"))
             gameObject.SetActive(false);
     }
