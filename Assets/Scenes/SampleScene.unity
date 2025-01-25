@@ -707,7 +707,8 @@ MonoBehaviour:
   playerSpeed: 10
   maxSpeed: 6
   shootingPoint: {fileID: 1716811990}
-  Bubble: {fileID: 1899660226450193296, guid: f35d8d8dc1ee3f74b882fb89f6f6969c, type: 3}
+  OffensiveBubble: {fileID: 1899660226450193296, guid: f35d8d8dc1ee3f74b882fb89f6f6969c, type: 3}
+  ResolveBubble: {fileID: 3777650245977401881, guid: dca47c04b033d8545b25d49f1ad94f36, type: 3}
   direction: 1
   CooldownTime: 1
 --- !u!95 &652137441

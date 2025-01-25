@@ -11,10 +11,13 @@ public class PlayerController : MonoBehaviour
 
     public Transform shootingPoint;
     public GameObject OffensiveBubble;
+    public GameObject ResolveBubble;
+    private GameObject currentBubble;
 
     InputAction jumpAction;
     InputAction moveAction;
     InputAction throwOffensiveBubble;
+    InputAction throwResolveBubble;
 
     Rigidbody2D rb;
     Collider2D col;
@@ -47,6 +50,7 @@ public class PlayerController : MonoBehaviour
         jumpAction = InputSystem.actions.FindAction("Jump");
         moveAction = InputSystem.actions.FindAction("Move");
         throwOffensiveBubble = InputSystem.actions.FindAction("Attack");
+        throwResolveBubble = InputSystem.actions.FindAction("Throw");
         rb = GetComponent<Rigidbody2D>();
         col = rb.GetComponent<Collider2D>();
         tr = GetComponent<Transform>();
@@ -75,7 +79,17 @@ public class PlayerController : MonoBehaviour
         {
             vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
         }
-        if(throwOffensiveBubble.WasPressedThisFrame() && cooldownUntilNextPress < Time.time)
+        if (throwResolveBubble.WasPressedThisFrame())
+        {
+            if (currentBubble != null)
+            {
+                Destroy(currentBubble);
+            }
+
+            currentBubble = Instantiate(ResolveBubble, shootingPoint.position, Quaternion.identity);
+            anim.Play("throw");
+        }
+        if (throwOffensiveBubble.WasPressedThisFrame() && cooldownUntilNextPress < Time.time)
         {
             cooldownUntilNextPress = Time.time + CooldownTime;
             Instantiate(OffensiveBubble, shootingPoint.position, transform.rotation);
