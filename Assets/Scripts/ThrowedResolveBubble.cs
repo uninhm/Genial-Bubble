@@ -26,4 +26,15 @@ public class ThrowedResolveBubble : MonoBehaviour
         if (Mathf.Abs(transform.position.x - cam.position.x) > 12)
             Destroy(gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GetComponent<Animator>().Play("BubblePop");
+        rb.linearVelocity = Vector3.zero;
+
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerController>().Jump(10);
+        }
+    }
 }
