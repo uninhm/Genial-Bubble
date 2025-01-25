@@ -13,5 +13,8 @@ public class CloudDeleter : MonoBehaviour
     {
         if (transform.position.x < cam.position.x - 12)
             Destroy(gameObject);
+        Vector3 pos = transform.position;
+        pos.x -= 0.2f * Time.deltaTime;
+        transform.position = pos;
     }
 }
