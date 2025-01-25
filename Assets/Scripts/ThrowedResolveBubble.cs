@@ -23,7 +23,7 @@ public class ThrowedResolveBubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Mathf.Abs(transform.position.x - cam.position.x) > 12)
+        if (Mathf.Abs(transform.position.x - cam.position.x) > 12 && rb.linearVelocity!=Vector2.zero)
             Destroy(gameObject);
     }
 
