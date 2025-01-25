@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubble_stoneman_idle_anim_frames_0: 2188566855293673794
+      bubble_stoneman_idle_anim_frames_1: 7160429853245871365
+      bubble_stoneman_idle_anim_frames_2: 7221254157399487771
+      bubble_stoneman_idle_anim_frames_3: -6974590370955902212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
