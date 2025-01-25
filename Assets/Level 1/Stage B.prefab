@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6770410063751628061}
   - component: {fileID: 5614072631548653900}
   - component: {fileID: 741907862409154665}
-  - component: {fileID: 7310339286591320354}
   - component: {fileID: 4574020704377778798}
+  - component: {fileID: 212810524247054898}
+  - component: {fileID: 6758265530986099030}
   m_Layer: 0
   m_Name: Stage B
   m_TagString: Untagged
@@ -95,7 +96,52 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!50 &7310339286591320354
+--- !u!68 &4574020704377778798
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2621942035210712189}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 27.973904, y: -1.8335037}
+  - {x: 27.9739, y: 2.0223317}
+  - {x: 42.01822, y: 2.022332}
+  - {x: 42.01822, y: -2.023234}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &212810524247054898
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -122,7 +168,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!68 &4574020704377778798
+--- !u!68 &6758265530986099030
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
