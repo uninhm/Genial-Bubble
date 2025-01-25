@@ -501,6 +501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage C
       objectReference: {fileID: 0}
+    - target: {fileID: 6532179753150025399, guid: 65d6c2bfbf6bb00479d64a21d3d963e9, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7094836562003257149, guid: 65d6c2bfbf6bb00479d64a21d3d963e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14
@@ -994,7 +998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2982446514500258918, guid: 49fd6373687ef474ea5d2a0aa191aeca, type: 3}
       propertyPath: m_TagString
-      value: Ennemy
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3038062512379536278, guid: 49fd6373687ef474ea5d2a0aa191aeca, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[0].m_Data
@@ -1131,6 +1135,10 @@ PrefabInstance:
     - target: {fileID: 39703153121002146, guid: 81d59b29694e936469afc32ea9b0a3b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402726797243836654, guid: 81d59b29694e936469afc32ea9b0a3b7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4191518513991730099, guid: 81d59b29694e936469afc32ea9b0a3b7, type: 3}
       propertyPath: m_Size.x
@@ -1720,7 +1728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6599718595418256035, guid: 4743f0649a1211d41b6d3aa6b7b97487, type: 3}
       propertyPath: m_TagString
-      value: Ennemy
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7656509171833828171, guid: 4743f0649a1211d41b6d3aa6b7b97487, type: 3}
       propertyPath: m_LocalPosition.x
