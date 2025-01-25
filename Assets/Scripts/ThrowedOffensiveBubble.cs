@@ -27,4 +27,9 @@ public class ThrowedBubble : MonoBehaviour
         if (Mathf.Abs(transform.position.x - cam.position.x) > 12)
             Destroy(gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+    }
 }
