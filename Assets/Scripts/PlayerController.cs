@@ -26,6 +26,10 @@ public class PlayerController : MonoBehaviour
     bool grounded;
 
     void OnCollisionEnter2D(Collision2D other)
+    public float CooldownTime;
+    float cooldownUntilNextPress;
+
+    bool IsGrounded()
     {
         if (other.gameObject.CompareTag("Ground"))
         {
@@ -72,8 +76,9 @@ public class PlayerController : MonoBehaviour
         {
             vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
         }
-        if(throwBubble.WasPressedThisFrame())
+        if(throwBubble.WasPressedThisFrame() && cooldownUntilNextPress < Time.time)
         {
+            cooldownUntilNextPress = Time.time + CooldownTime;
             Instantiate(Bubble, shootingPoint.position, transform.rotation);
         }
 
