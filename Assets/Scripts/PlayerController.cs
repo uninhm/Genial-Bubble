@@ -62,42 +62,46 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         bool isTouchingFloor = IsGrounded();
-        if (isTouchingFloor && (jumpAction.WasPressedThisFrame() || jumpAction.IsPressed() && !wasTouchingFloor))
+        if (!stopped)
         {
-            Jump(jumpForce);
-        }
-        Vector2 vel = rb.linearVelocity;
-        if (moveAction.IsPressed() && !stopped)
-        {
-            rb.AddForce(moveAction.ReadValue<Vector2>() * playerSpeed);
-            if (moveAction.ReadValue<Vector2>().x > 0)
-                direction = 1;
-            else direction = -1;
-            tr.localScale = new Vector3(direction, 1, 1);
-        }
-        else
-        {
-            vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
-        }
-        if (throwResolveBubble.WasPressedThisFrame() && cooldownUntilNextPressPassive < Time.time)
-        {
-            if (currentBubble != null)
+            if (isTouchingFloor && (jumpAction.WasPressedThisFrame() || jumpAction.IsPressed() && !wasTouchingFloor))
             {
-                currentBubble.GetComponent<Animator>().Play("BubblePop");
-                Destroy(currentBubble, 2f);
+                Jump(jumpForce);
             }
+            if (moveAction.IsPressed())
+            {
+                rb.AddForce(moveAction.ReadValue<Vector2>() * playerSpeed);
+                if (moveAction.ReadValue<Vector2>().x > 0)
+                    direction = 1;
+                else direction = -1;
+                tr.localScale = new Vector3(direction, 1, 1);
+            }
+            else
+            {
+                Vector2 vel2 = rb.linearVelocity;
+                vel2.x = (float)(vel2.x - vel2.x * 1.5 * Time.deltaTime);
+            }
+            if (throwResolveBubble.WasPressedThisFrame() && cooldownUntilNextPressPassive < Time.time)
+            {
+                if (currentBubble != null)
+                {
+                    currentBubble.GetComponent<Animator>().Play("BubblePop");
+                    Destroy(currentBubble, 2f);
+                }
 
-            cooldownUntilNextPressPassive = Time.time + CooldownTimePassive;
-            currentBubble = Instantiate(ResolveBubble, shootingPoint.position, Quaternion.identity);
-            anim.Play("throw");
-        }
-        if (throwOffensiveBubble.WasPressedThisFrame() && cooldownUntilNextPressOffensive < Time.time)
-        {
-            cooldownUntilNextPressOffensive = Time.time + CooldownTimeOffensive;
-            Instantiate(OffensiveBubble, shootingPoint.position, transform.rotation);
-            anim.Play("throw");
+                cooldownUntilNextPressPassive = Time.time + CooldownTimePassive;
+                currentBubble = Instantiate(ResolveBubble, shootingPoint.position, Quaternion.identity);
+                anim.Play("throw");
+            }
+            if (throwOffensiveBubble.WasPressedThisFrame() && cooldownUntilNextPressOffensive < Time.time)
+            {
+                cooldownUntilNextPressOffensive = Time.time + CooldownTimeOffensive;
+                Instantiate(OffensiveBubble, shootingPoint.position, transform.rotation);
+                anim.Play("throw");
+            }
         }
 
+        Vector2 vel = rb.linearVelocity;
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
         rb.linearVelocity = vel;
         anim.SetFloat("Speed", Mathf.Abs(vel.x));
