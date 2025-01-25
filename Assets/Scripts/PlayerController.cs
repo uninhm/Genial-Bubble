@@ -23,11 +23,19 @@ public class PlayerController : MonoBehaviour
 
     public int direction = 1;
 
-    float distToGround;
+    bool grounded;
 
-    bool IsGrounded()
+    void OnCollisionEnter2D(Collision2D other)
     {
-        return Physics2D.Raycast(transform.position, -Vector2.up, distToGround + 0.1f);
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            grounded = true;
+        }
+    }
+
+    public bool IsGrounded()
+    {
+        return grounded;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,7 +48,6 @@ public class PlayerController : MonoBehaviour
         col = rb.GetComponent<Collider2D>();
         tr = GetComponent<Transform>();
         anim = GetComponent<Animator>();
-        distToGround = col.bounds.extents.y;
     }
 
     // Update is called once per frame
@@ -50,6 +57,7 @@ public class PlayerController : MonoBehaviour
         if (isTouchingFloor && (jumpAction.WasPressedThisFrame() || jumpAction.IsPressed() && !wasTouchingFloor))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            grounded = false;
         }
         Vector2 vel = rb.linearVelocity;
         if (moveAction.IsPressed())
