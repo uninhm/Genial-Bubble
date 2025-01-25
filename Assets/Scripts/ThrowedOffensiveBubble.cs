@@ -7,10 +7,12 @@ public class ThrowedBubble : MonoBehaviour
     PlayerController playerCon;
     Rigidbody2D rb;
     public Transform cam;
+    Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerCon = GameObject.Find("Player").GetComponent<PlayerController>();
         rb.linearVelocity = Vector3.right * playerCon.direction * speed;
@@ -30,8 +32,10 @@ public class ThrowedBubble : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Enemy enemy = collision.GetComponent<Enemy>();
+        anim.Play("BubbleIdle");
+        anim.Play("BubblePop");
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
         enemy.takeShot();
-        Destroy(gameObject);
+        rb.linearVelocity = Vector2.zero;
     }
 }
