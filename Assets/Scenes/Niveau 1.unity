@@ -2259,7 +2259,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 127841759938371770, guid: 5e0e81f9e3c87c24781beed28a13b72c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7464,7 +7464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7656509171833828171, guid: 4743f0649a1211d41b6d3aa6b7b97487, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.06
+      value: 66.11
       objectReference: {fileID: 0}
     - target: {fileID: 7656509171833828171, guid: 4743f0649a1211d41b6d3aa6b7b97487, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7501,6 +7501,10 @@ PrefabInstance:
     - target: {fileID: 7656509171833828171, guid: 4743f0649a1211d41b6d3aa6b7b97487, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223036014255671205, guid: 4743f0649a1211d41b6d3aa6b7b97487, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
