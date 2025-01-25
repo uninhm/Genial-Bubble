@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubble_snowman_idle_frames_0: 1528784807566925049
+      bubble_snowman_idle_frames_1: -5101362211604665962
+      bubble_snowman_idle_frames_2: -5420358668546598092
+      bubble_snowman_idle_frames_3: 2130393876876712378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
