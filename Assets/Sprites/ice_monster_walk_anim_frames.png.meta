@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 17fbb760a093f2640ab1f6be1d4a6d45
+guid: 76abe3ca6854af94788abab60805871d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1284111320489000314
-    second: monster_walk_anim_frames_0
+      213: 4416627675790477072
+    second: ice_monster_walk_anim_frames_0
   - first:
-      213: -6507372039391338058
-    second: monster_walk_anim_frames_1
+      213: 6246218061622167648
+    second: ice_monster_walk_anim_frames_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monster_walk_anim_frames_0
+      name: ice_monster_walk_anim_frames_0
       rect:
         serializedVersion: 2
         x: 1
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7dfdc5417412d110800000000000000
-      internalID: 1284111320489000314
+      spriteID: 01786a888730b4d30800000000000000
+      internalID: 4416627675790477072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_walk_anim_frames_1
+      name: ice_monster_walk_anim_frames_1
       rect:
         serializedVersion: 2
         x: 0
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b125c29b9b21b5a0800000000000000
-      internalID: -6507372039391338058
+      spriteID: 0684e90bb360fa650800000000000000
+      internalID: 6246218061622167648
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      monster_walk_anim_frames_0: 1284111320489000314
-      monster_walk_anim_frames_1: -6507372039391338058
+      ice_monster_walk_anim_frames_0: 4416627675790477072
+      ice_monster_walk_anim_frames_1: 6246218061622167648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

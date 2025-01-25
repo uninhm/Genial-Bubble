@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 17fbb760a093f2640ab1f6be1d4a6d45
+guid: 3b8cf1c6a86dae6499afce85d3d5cbc3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1284111320489000314
-    second: monster_walk_anim_frames_0
+      213: -6874472881093601284
+    second: bulle_spider_idle_anim_frames_0
   - first:
-      213: -6507372039391338058
-    second: monster_walk_anim_frames_1
+      213: 4879991586372946988
+    second: bulle_spider_idle_anim_frames_1
+  - first:
+      213: -280250958319423221
+    second: bulle_spider_idle_anim_frames_2
+  - first:
+      213: 5232637532576373314
+    second: bulle_spider_idle_anim_frames_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,30 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monster_walk_anim_frames_0
+      name: bulle_spider_idle_anim_frames_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 42
-        width: 31
-        height: 21
+        x: 2
+        y: 35
+        width: 27
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7dfdc5417412d110800000000000000
-      internalID: 1284111320489000314
+      spriteID: cf71c505657f890a0800000000000000
+      internalID: -6874472881093601284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_walk_anim_frames_1
+      name: bulle_spider_idle_anim_frames_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 10
-        width: 32
-        height: 21
+        x: 34
+        y: 36
+        width: 27
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b125c29b9b21b5a0800000000000000
-      internalID: -6507372039391338058
+      spriteID: c2c87a41e7639b340800000000000000
+      internalID: 4879991586372946988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulle_spider_idle_anim_frames_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01786dfc395c1cf0800000000000000
+      internalID: -280250958319423221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulle_spider_idle_anim_frames_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a5797bc101e9840800000000000000
+      internalID: 5232637532576373314
       vertices: []
       indices: 
       edges: []
@@ -173,8 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      monster_walk_anim_frames_0: 1284111320489000314
-      monster_walk_anim_frames_1: -6507372039391338058
+      bulle_spider_idle_anim_frames_0: -6874472881093601284
+      bulle_spider_idle_anim_frames_1: 4879991586372946988
+      bulle_spider_idle_anim_frames_2: -280250958319423221
+      bulle_spider_idle_anim_frames_3: 5232637532576373314
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

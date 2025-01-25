@@ -32,10 +32,13 @@ public class ThrowedBubble : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        anim.Play("BubbleIdle");
-        anim.Play("BubblePop");
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-        enemy.takeShot();
-        rb.linearVelocity = Vector2.zero;
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            anim.Play("BubbleSpiderIdle");
+            transform.position = collision.transform.position;
+            rb.linearVelocity = new Vector2(0, 0.2f);
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            enemy.takeShot();
+        }
     }
 }
