@@ -90,6 +90,12 @@ public class PlayerController : MonoBehaviour
             } else
             {
                 crouched = false;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.up * col.bounds.extents.y + Vector3.left * col.bounds.extents.x, Vector2.up);
+                if (hit.collider && hit.distance < 0.3f)
+                    crouched = true;
+                hit = Physics2D.Raycast(transform.position + Vector3.up * col.bounds.extents.y + Vector3.right * col.bounds.extents.x, Vector2.up);
+                if (hit.collider && hit.distance < 0.3f)
+                    crouched = true;
             }
             if (throwResolveBubble.WasPressedThisFrame() && cooldownUntilNextPressPassive < Time.time)
             {
