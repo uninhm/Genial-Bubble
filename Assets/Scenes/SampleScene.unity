@@ -357,7 +357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca2643d0f5e29f4399f0e63387ebd4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 3.5
+  maxDistanceR: 4.5
+  maxDistanceL: 9
 --- !u!1 &544581370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6827432678214710613, guid: 81d59b29694e936469afc32ea9b0a3b7, type: 3}
