@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
 
     float distToGround;
 
+    public float CooldownTime;
+    float cooldownUntilNextPress;
+
     bool IsGrounded()
     {
         return Physics2D.Raycast(transform.position, -Vector2.up, distToGround + 0.1f);
@@ -64,8 +67,9 @@ public class PlayerController : MonoBehaviour
         {
             vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
         }
-        if(throwBubble.WasPressedThisFrame())
+        if(throwBubble.WasPressedThisFrame() && cooldownUntilNextPress < Time.time)
         {
+            cooldownUntilNextPress = Time.time + CooldownTime;
             Instantiate(Bubble, shootingPoint.position, transform.rotation);
         }
 
