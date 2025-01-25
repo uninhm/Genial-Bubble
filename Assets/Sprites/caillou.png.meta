@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caillou_0: 7874217791664242756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
