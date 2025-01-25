@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             grounded = false;
+            anim.Play("Jump");
         }
         Vector2 vel = rb.linearVelocity;
         if (moveAction.IsPressed())
@@ -85,6 +86,7 @@ public class PlayerController : MonoBehaviour
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
         rb.linearVelocity = vel;
         anim.SetFloat("Speed", Mathf.Abs(vel.x));
+        anim.SetBool("Grounded", isTouchingFloor);
 
         wasTouchingFloor = isTouchingFloor;
     }
