@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public int jumpForce = 15;
     public int playerSpeed = 10;
     public int maxSpeed = 6;
+    public float floorDistance;
     bool wasTouchingFloor;
 
     public Transform shootingPoint;
@@ -26,22 +27,12 @@ public class PlayerController : MonoBehaviour
 
     public int direction = 1;
 
-    bool grounded;
-
     public float CooldownTime;
     float cooldownUntilNextPress;
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-            grounded = true;
-        }
-    }
-
     public bool IsGrounded()
     {
-        return grounded;
+        if (Mathf.Abs(rb.linearVelocityY) > 0.01) return false;
+        return true;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -64,7 +55,7 @@ public class PlayerController : MonoBehaviour
         if (isTouchingFloor && (jumpAction.WasPressedThisFrame() || jumpAction.IsPressed() && !wasTouchingFloor))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            grounded = false;
+            anim.Play("Jump");
         }
         Vector2 vel = rb.linearVelocity;
         if (moveAction.IsPressed())
@@ -99,6 +90,7 @@ public class PlayerController : MonoBehaviour
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
         rb.linearVelocity = vel;
         anim.SetFloat("Speed", Mathf.Abs(vel.x));
+        anim.SetBool("Grounded", isTouchingFloor);
 
         wasTouchingFloor = isTouchingFloor;
     }
