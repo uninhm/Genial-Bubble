@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     InputAction moveAction;
     InputAction throwOffensiveBubble;
     InputAction throwResolveBubble;
+    InputAction crouch;
 
     Rigidbody2D rb;
     Collider2D col;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
 
     public int direction = 1;
+    bool crouched = false;
 
     public float CooldownTimeOffensive;
     float cooldownUntilNextPressOffensive;
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         throwOffensiveBubble = InputSystem.actions.FindAction("Attack");
         throwResolveBubble = InputSystem.actions.FindAction("Throw");
+        crouch = InputSystem.actions.FindAction("Crouch");
         rb = GetComponent<Rigidbody2D>();
         col = rb.GetComponent<Collider2D>();
         tr = GetComponent<Transform>();
@@ -81,6 +84,13 @@ public class PlayerController : MonoBehaviour
                 Vector2 vel2 = rb.linearVelocity;
                 vel2.x = (float)(vel2.x - vel2.x * 1.5 * Time.deltaTime);
             }
+            if (crouch.IsPressed())
+            {
+                crouched = true;
+            } else
+            {
+                crouched = false;
+            }
             if (throwResolveBubble.WasPressedThisFrame() && cooldownUntilNextPressPassive < Time.time)
             {
                 if (currentBubble != null)
@@ -103,9 +113,14 @@ public class PlayerController : MonoBehaviour
 
         Vector2 vel = rb.linearVelocity;
         vel.x = Mathf.Clamp(vel.x, -maxSpeed, maxSpeed);
+        if (crouched)
+        {
+            vel.x = Mathf.Clamp(vel.x, -maxSpeed/3, maxSpeed/3);
+        }
         rb.linearVelocity = vel;
         anim.SetFloat("Speed", Mathf.Abs(vel.x));
         anim.SetBool("Grounded", isTouchingFloor);
+        anim.SetBool("Crouched", crouched);
 
         wasTouchingFloor = isTouchingFloor;
     }
