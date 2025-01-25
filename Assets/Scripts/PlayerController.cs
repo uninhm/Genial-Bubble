@@ -27,8 +27,11 @@ public class PlayerController : MonoBehaviour
 
     public int direction = 1;
 
-    public float CooldownTime;
-    float cooldownUntilNextPress;
+    public float CooldownTimeOffensive;
+    float cooldownUntilNextPressOffensive;
+
+    public float CooldownTimePassive;
+    float cooldownUntilNextPressPassive;
     public bool IsGrounded()
     {
         if (Mathf.Abs(rb.linearVelocityY) > 0.01) return false;
@@ -70,7 +73,7 @@ public class PlayerController : MonoBehaviour
         {
             vel.x = (float)(vel.x - vel.x * 1.5 * Time.deltaTime);
         }
-        if (throwResolveBubble.WasPressedThisFrame())
+        if (throwResolveBubble.WasPressedThisFrame() && cooldownUntilNextPressPassive < Time.time)
         {
             if (currentBubble != null)
             {
@@ -78,12 +81,13 @@ public class PlayerController : MonoBehaviour
                 Destroy(currentBubble, 2f);
             }
 
+            cooldownUntilNextPressPassive = Time.time + CooldownTimePassive;
             currentBubble = Instantiate(ResolveBubble, shootingPoint.position, Quaternion.identity);
             anim.Play("throw");
         }
-        if (throwOffensiveBubble.WasPressedThisFrame() && cooldownUntilNextPress < Time.time)
+        if (throwOffensiveBubble.WasPressedThisFrame() && cooldownUntilNextPressOffensive < Time.time)
         {
-            cooldownUntilNextPress = Time.time + CooldownTime;
+            cooldownUntilNextPressOffensive = Time.time + CooldownTimeOffensive;
             Instantiate(OffensiveBubble, shootingPoint.position, transform.rotation);
             anim.Play("throw");
         }
