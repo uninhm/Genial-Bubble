@@ -25,11 +25,10 @@ public class PlayerController : MonoBehaviour
 
     bool grounded;
 
-    void OnCollisionEnter2D(Collision2D other)
     public float CooldownTime;
     float cooldownUntilNextPress;
 
-    bool IsGrounded()
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
         {

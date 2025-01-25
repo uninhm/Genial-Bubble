@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "bulle_sans_fronti\xE8res_0": 5718394668139013681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
