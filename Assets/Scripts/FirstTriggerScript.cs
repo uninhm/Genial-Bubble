@@ -6,7 +6,7 @@ public class FirstTriggerScript : MonoBehaviour
     public float speed = 1;
     PlayerController playerController;
     bool moving = false;
-    bool activated = false;
+    public bool activated = false;
     public float targetX = 23;
 
     private void OnTriggerEnter2D(Collider2D collider)
