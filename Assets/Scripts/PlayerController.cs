@@ -68,6 +68,5 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(vel.x));
 
         wasTouchingFloor = isTouchingFloor;
-
     }
 }
