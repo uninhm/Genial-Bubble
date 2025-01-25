@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 81249552}
   m_Layer: 0
   m_Name: Spider
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 81249549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0767066, y: -1.8723931, z: 0}
+  m_LocalPosition: {x: -2.0767066, y: -3.086, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -540,6 +540,7 @@ GameObject:
   - component: {fileID: 652137436}
   - component: {fileID: 652137440}
   - component: {fileID: 652137441}
+  - component: {fileID: 652137442}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -684,7 +685,7 @@ Transform:
   m_GameObject: {fileID: 652137435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.913, y: -1.895, z: 0}
+  m_LocalPosition: {x: -5.913, y: -2.634, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -735,6 +736,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &652137442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652137435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b62a24fdc48444e8eb004c188db406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnDelay: 1
+  fadeOutDuration: 1
 --- !u!4 &675721970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8250938767811616420, guid: 86a1306740420dd4f9993787fdd569a9, type: 3}
@@ -1268,7 +1283,7 @@ Transform:
   m_GameObject: {fileID: 1716811989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.219, y: 0.233, z: -2}
+  m_LocalPosition: {x: 1.131, y: 0.207, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
