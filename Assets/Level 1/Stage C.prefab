@@ -3,8 +3,8 @@
 --- !u!1 &730746964588531742
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4036149855075133798, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -21,8 +21,8 @@ GameObject:
 --- !u!4 &1334797111744274161
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8554900507376039136, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730746964588531742}
   serializedVersion: 2
@@ -36,8 +36,8 @@ Transform:
 --- !u!1839735485 &549701707755872320
 Tilemap:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2635565513870119283, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730746964588531742}
   m_Enabled: 1
@@ -596,8 +596,8 @@ Tilemap:
 --- !u!483693784 &5522620776301436581
 TilemapRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4800193127029725360, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730746964588531742}
   m_Enabled: 1
@@ -648,8 +648,8 @@ TilemapRenderer:
 --- !u!1 &2342685695570192712
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5810088661189907708, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -666,8 +666,8 @@ GameObject:
 --- !u!4 &983850784300538034
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5951255454713812069, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2342685695570192712}
   serializedVersion: 2
@@ -681,8 +681,8 @@ Transform:
 --- !u!1839735485 &7578859412892410879
 Tilemap:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5587231838050775224, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2342685695570192712}
   m_Enabled: 1
@@ -795,8 +795,8 @@ Tilemap:
 --- !u!483693784 &8339324699390595564
 TilemapRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8278695311389955584, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2342685695570192712}
   m_Enabled: 1
@@ -847,8 +847,8 @@ TilemapRenderer:
 --- !u!1 &4059115887001594332
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 679260355234727293, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -865,8 +865,8 @@ GameObject:
 --- !u!4 &7211054372106709955
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2352322175323396551, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4059115887001594332}
   serializedVersion: 2
@@ -880,8 +880,8 @@ Transform:
 --- !u!1839735485 &9095617898083690331
 Tilemap:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5322326655013304783, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4059115887001594332}
   m_Enabled: 1
@@ -3908,8 +3908,8 @@ Tilemap:
 --- !u!483693784 &5867033233718474489
 TilemapRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6557753724426291714, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4059115887001594332}
   m_Enabled: 1
@@ -3960,8 +3960,8 @@ TilemapRenderer:
 --- !u!1 &5127410504337541202
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7453571402904735419, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -3977,8 +3977,8 @@ GameObject:
 --- !u!4 &7094836562003257149
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5127410504337541202}
   serializedVersion: 2
@@ -3996,8 +3996,8 @@ Transform:
 --- !u!156049354 &6900421730335858034
 Grid:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4473548116207549792, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5127410504337541202}
   m_Enabled: 1
@@ -4008,8 +4008,8 @@ Grid:
 --- !u!1 &6532179753150025399
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5911704905864605553, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -4026,8 +4026,8 @@ GameObject:
 --- !u!4 &2913659507694007298
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9042461793459578192, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6532179753150025399}
   serializedVersion: 2
@@ -4041,8 +4041,8 @@ Transform:
 --- !u!1839735485 &9076583959943273530
 Tilemap:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1224195233589839773, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6532179753150025399}
   m_Enabled: 1
@@ -4195,8 +4195,8 @@ Tilemap:
 --- !u!483693784 &4719345661577211305
 TilemapRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2777589908328235882, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+  m_PrefabInstance: {fileID: 5223271526518240471}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6532179753150025399}
   m_Enabled: 1
@@ -4244,3 +4244,60 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1001 &5223271526518240471
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990147918097319236, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7453571402904735419, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
+      propertyPath: m_Name
+      value: Stage C
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0858962ffd8b02a499c6a99a6a7e6155, type: 3}
