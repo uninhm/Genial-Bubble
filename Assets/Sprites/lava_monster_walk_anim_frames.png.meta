@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lava_monster_walk_anim_frames_0: 5680560767198038458
+      lava_monster_walk_anim_frames_1: 3281842531279545445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

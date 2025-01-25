@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_monster_walk_anim_frames_0: 4416627675790477072
+      ice_monster_walk_anim_frames_1: 6246218061622167648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
