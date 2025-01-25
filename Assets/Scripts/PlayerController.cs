@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     public bool IsGrounded()
     {
         if (Mathf.Abs(rb.linearVelocityY) > 0.01) return false;
-        return true;
+        return Physics2D.Raycast(transform.position + Vector3.down * col.bounds.extents.y, -Vector2.up, 0.1f).collider != null;
     }
 
     public void Jump(int force)
