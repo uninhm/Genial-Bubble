@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Spritefusion.meta
+guid: 2e93d1517b610bc47aa6915b0c83d158
+folderAsset: yes
+DefaultImporter:
+========
 guid: cfb4247704c40fb47ae3662ed5e1cbc3
 NativeFormatImporter:
+>>>>>>>> 3fd055199418a4d09284281f6bcbff33eb7d3f58:Assets/Animations/Idle.anim.meta
   externalObjects: {}
   mainObjectFileID: 7400000
   userData: 
