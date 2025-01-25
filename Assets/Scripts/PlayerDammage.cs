@@ -11,14 +11,12 @@ public class PlayerDammage : MonoBehaviour
     private bool isFading = false;
     private bool isWaitingToRespawn = false;
     public Transform cam;
-    private ParentCheckpointScript checkpoints;
 
     void Start()
     {
         initialPosition = transform.position;
         initialRotation = transform.rotation;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        checkpoints = GameObject.Find("Checkpoints").GetComponent<ParentCheckpointScript>();
     }
 
     void Update()
@@ -53,12 +51,12 @@ public class PlayerDammage : MonoBehaviour
 
     void Respawn()
     {
-        transform.position = checkpoints.checkpointPos;
+        transform.position = initialPosition;
         transform.rotation = initialRotation;
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
         gameObject.SetActive(true);
         isWaitingToRespawn = false;
-        cam.position = checkpoints.cameraPos;
+        cam.position = new Vector3(0, 0, -10);
         GameObject.Find("firstTrigger").GetComponent<FirstTriggerScript>().activated = false;
         GetComponent<PlayerController>().stopped = false;
     }
