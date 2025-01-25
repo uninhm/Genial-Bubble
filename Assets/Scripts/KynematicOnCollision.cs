@@ -20,5 +20,7 @@ public class KynematicOnCollision : MonoBehaviour
     {
         if (collision.gameObject.name == "fondation" && falled)
             rb.bodyType = RigidbodyType2D.Kinematic;
+        if (collision.gameObject.name == "Spider")
+            Destroy(collision.gameObject);
     }
 }
