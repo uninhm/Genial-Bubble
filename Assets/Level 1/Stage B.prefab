@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6770410063751628061}
   - component: {fileID: 5614072631548653900}
   m_Layer: 0
-  m_Name: Grid level 1 (2)
+  m_Name: Stage B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
