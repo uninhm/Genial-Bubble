@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spider_walking_anim_frames_0: -208580498112256399
+      spider_walking_anim_frames_1: -6859106378402390080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
