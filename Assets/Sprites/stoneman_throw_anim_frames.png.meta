@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stoneman_throw_anim_frames_0: -2706212235401411843
+      stoneman_throw_anim_frames_1: 3419277318007570858
+      stoneman_throw_anim_frames_2: -2422143763066822020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
