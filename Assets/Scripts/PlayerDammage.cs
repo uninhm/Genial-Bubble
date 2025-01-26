@@ -56,6 +56,7 @@ public class PlayerDammage : MonoBehaviour
             isFading = true;
             fadeStartTime = Time.time;
             GetComponent<PlayerController>().stopped = true;
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 
@@ -72,6 +73,7 @@ public class PlayerDammage : MonoBehaviour
         foreach (Resetable r in resetOnRespawn)
             r.Reset();
         GetComponent<PlayerController>().stopped = false;
+        GetComponent <Collider2D>().enabled = true;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
