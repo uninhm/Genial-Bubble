@@ -6593,6 +6593,7 @@ GameObject:
   - component: {fileID: 420442580}
   - component: {fileID: 420442582}
   - component: {fileID: 420442583}
+  - component: {fileID: 420442584}
   m_Layer: 0
   m_Name: button 1
   m_TagString: Untagged
@@ -6799,8 +6800,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb3c4fff712dd747a6e16f1bec0717a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  block: {fileID: 0}
-  text: {fileID: 0}
+--- !u!114 &420442584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420442578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ae6ede194307b4f800d4608a896f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  spikes: {fileID: 65600941}
 --- !u!1 &503257539
 GameObject:
   m_ObjectHideFlags: 0
@@ -16161,6 +16174,7 @@ GameObject:
   - component: {fileID: 2050205635}
   - component: {fileID: 2050205637}
   - component: {fileID: 2050205636}
+  - component: {fileID: 2050205638}
   m_Layer: 0
   m_Name: button 2
   m_TagString: Untagged
@@ -16307,6 +16321,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &2050205638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050205634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ae6ede194307b4f800d4608a896f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  spikes: {fileID: 1305046719}
 --- !u!1 &2065201796
 GameObject:
   m_ObjectHideFlags: 0
