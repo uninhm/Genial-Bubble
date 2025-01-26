@@ -11941,18 +11941,26 @@ PrefabInstance:
     - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: 'resetOnRespawn.Array.data[4]'
       value: 
-      objectReference: {fileID: 420442583}
+      objectReference: {fileID: 420442584}
     - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: 'resetOnRespawn.Array.data[5]'
       value: 
-      objectReference: {fileID: 2050205639}
+      objectReference: {fileID: 2050205638}
+    - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: 'resetOnRespawn.Array.data[6]'
+      value: 
+      objectReference: {fileID: 2050205638}
+    - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: 'resetOnRespawn.Array.data[7]'
+      value: 
+      objectReference: {fileID: 2050205638}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.08
+      value: 84.64
       objectReference: {fileID: 0}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.86
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12090,8 +12098,8 @@ GameObject:
   - component: {fileID: 2050205637}
   - component: {fileID: 2050205636}
   - component: {fileID: 2050205640}
-  - component: {fileID: 2050205639}
   - component: {fileID: 2050205638}
+  - component: {fileID: 2050205639}
   m_Layer: 0
   m_Name: button 2
   m_TagString: Untagged
