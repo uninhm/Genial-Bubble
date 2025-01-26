@@ -15008,6 +15008,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3804189726418716832, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.81690407
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804189726418716832, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09970951
+      objectReference: {fileID: 0}
     - target: {fileID: 3820626954782824830, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_Name
       value: Player
