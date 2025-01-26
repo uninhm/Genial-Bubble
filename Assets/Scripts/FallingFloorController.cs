@@ -34,7 +34,7 @@ public class FallingFloorController : Resetable
             invoked = true;
             Invoke("Fall", delay);
         }
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.name == "Killer")
             gameObject.SetActive(false);
     }
 
