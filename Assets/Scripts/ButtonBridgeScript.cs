@@ -13,9 +13,4 @@ public class ButtonBridgeScript : Activable
             activated = true;
         }
     }
-
-    override public void Reset()
-    {
-        activated = false;
-    }
 }

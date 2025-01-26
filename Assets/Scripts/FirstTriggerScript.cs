@@ -8,6 +8,7 @@ public class FirstTriggerScript : Resetable
     bool moving = false;
     public bool activated = false;
     public float targetX = 23;
+    public Activable button;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -16,6 +17,8 @@ public class FirstTriggerScript : Resetable
             moving = true;
             playerController = collider.gameObject.GetComponent<PlayerController>();
             playerController.stopped = true;
+            Rigidbody2D rb = collider.gameObject.GetComponent<Rigidbody2D>();
+            rb.linearVelocity = rb.linearVelocity * 0.1f;
             activated = true;
         }
     }
@@ -38,6 +41,6 @@ public class FirstTriggerScript : Resetable
 
     override public void Reset()
     {
-        activated = false;
+        if (!button.activated) activated = false;
     }
 }
