@@ -11,5 +11,6 @@ public class Death : MonoBehaviour
     public void Die()
     {
         dead = true;
+        GetComponent<Collider2D>().enabled = false;
     }
 }
