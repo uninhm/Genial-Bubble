@@ -1,10 +1,8 @@
 using UnityEngine;
 
-public class Resetable : MonoBehaviour
+abstract public class Resetable : MonoBehaviour
 {
-    virtual public void Reset()
-    {
-    }
+    abstract public void Reset();
 }
 
 public class PlayerDammage : MonoBehaviour

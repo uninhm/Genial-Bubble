@@ -3,24 +3,21 @@ using UnityEngine.UI;
 
 public class ButtonActivate : MonoBehaviour
 {
-    public GameObject block;
-    public Text text;
     Rigidbody2D rb;
     private Vector3 initialPosition;
     private Quaternion initialRotation;
     private Collider2D buttonCollider;
 
+    Activable[] activables;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        activables = GetComponents<Activable>();
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        block.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        block.GetComponent<Rigidbody2D>().gravityScale = 1;
+        foreach (var a  in activables)
+            a.Activate();
         if (other.gameObject.CompareTag("Projectile"))
         {
             rb=other.gameObject.GetComponent<Rigidbody2D>();
