@@ -9,12 +9,14 @@ public class ButtonActivate : MonoBehaviour
     private Quaternion initialRotation;
     private Collider2D buttonCollider;
     private GameObject bubble;
+    PlayerController player;
 
     Activable[] activables;
 
     void Start()
     {
         activables = GetComponents<Activable>();
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     public bool IsActive()
@@ -31,8 +33,10 @@ public class ButtonActivate : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
             buttonCollider = GetComponent<Collider2D>();
             initialPosition = buttonCollider.bounds.center;
+            initialPosition.z = 0.5f;
             other.transform.position = initialPosition;
             bubble = other.gameObject;
+            player.DetachBubble();
         }
     }
 }   
