@@ -35,6 +35,11 @@ public class PlayerController : MonoBehaviour
 
     public float CooldownTimePassive;
     float cooldownUntilNextPressPassive;
+
+    public void DetachBubble()
+    {
+        currentBubble = null;
+    }
     public bool IsGrounded()
     {
         if (Mathf.Abs(rb.linearVelocityY) > 0.01) return false;
