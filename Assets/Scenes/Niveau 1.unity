@@ -14552,6 +14552,7 @@ MonoBehaviour:
   speed: 3
   activated: 0
   targetX: 20
+  button: {fileID: 1077289021}
 --- !u!61 &1774363916
 BoxCollider2D:
   m_ObjectHideFlags: 0
