@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a1827c580608446a842ccc2de94ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 0, y: 0, z: 0}
+  prefab: {fileID: 0}
 --- !u!1 &900434248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,6 +2954,14 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1309514596}
+    - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: resetOnRespawn.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: 'resetOnRespawn.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2145008544}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.52
@@ -9684,8 +9692,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2411056575084817394, guid: a64422a6d54c97543894f5eded5b8537, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2145008544}
   m_SourcePrefab: {fileID: 100100000, guid: a64422a6d54c97543894f5eded5b8537, type: 3}
+--- !u!1 &2145008543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2411056575084817394, guid: a64422a6d54c97543894f5eded5b8537, type: 3}
+  m_PrefabInstance: {fileID: 2145008542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2145008544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145008543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a1827c580608446a842ccc2de94ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2411056575084817394, guid: a64422a6d54c97543894f5eded5b8537, type: 3}
 --- !u!1839735485 &61038502785317546
 Tilemap:
   m_ObjectHideFlags: 0
@@ -24108,3 +24137,4 @@ SceneRoots:
   - {fileID: 1395384506}
   - {fileID: 5990070304160871891}
   - {fileID: 960139096}
+  - {fileID: 2145008542}

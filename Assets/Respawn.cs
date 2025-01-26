@@ -1,24 +1,19 @@
 using UnityEngine;
 
-public class Mob : MonoBehaviour
+public class Mob : Resetable
 {
-    public Vector3 spawnPoint; // Point de respawn
+    Vector3 spawnPoint; // Point de respawn
+    Quaternion spawnRotation;
+    public GameObject prefab;
 
     void Start()
     {
-        // Mémorise le point de spawn initial si non défini
-        if (spawnPoint == Vector3.zero)
-        {
-            spawnPoint = transform.position;
-        }
+        spawnPoint = transform.position;
+        spawnRotation = transform.rotation;
     }
 
-    public void RespawnObject()
+    override public void Reset()
     {
-        // Repositionne l'objet à son point de spawn
-        transform.position = spawnPoint;
-
-        // Réactive l'objet si nécessaire
-        gameObject.SetActive(true);
+        Instantiate(prefab, spawnPoint, spawnRotation);
     }
 }
