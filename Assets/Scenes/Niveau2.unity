@@ -6462,7 +6462,7 @@ GameObject:
   - component: {fileID: 298285226}
   - component: {fileID: 298285225}
   m_Layer: 0
-  m_Name: MusicManager2
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
