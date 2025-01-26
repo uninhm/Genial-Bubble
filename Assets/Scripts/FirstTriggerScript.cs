@@ -8,6 +8,7 @@ public class FirstTriggerScript : Resetable
     bool moving = false;
     public bool activated = false;
     public float targetX = 23;
+    public Activable button;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -38,6 +39,6 @@ public class FirstTriggerScript : Resetable
 
     override public void Reset()
     {
-        activated = false;
+        if (!button.activated) activated = false;
     }
 }
