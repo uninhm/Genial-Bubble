@@ -38,6 +38,7 @@ public class ThrowedBubble : MonoBehaviour
             enemy.GetComponent<Animator>().Play("InsideBubble");
             enemy.transform.position = transform.position;
             Destroy(gameObject);
+            enemy.GetComponent<Death>().Die();
         }
     }
 }

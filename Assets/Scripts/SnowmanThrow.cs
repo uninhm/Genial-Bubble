@@ -8,16 +8,18 @@ public class SnowmanThrow : MonoBehaviour
     public float fireRate = 0.5f; // Tirs par seconde
     private float nextFireTime = 0f;
     public Transform SnowmanHand;
+    Death death;
     Animator anim;
 
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        death = GetComponent<Death>();
     }
     void Update()
     {
-        if (Time.time >= nextFireTime)
+        if (Time.time >= nextFireTime && !death.IsDead())
         {
             LaunchBall();
             nextFireTime = Time.time + 1f / fireRate;
