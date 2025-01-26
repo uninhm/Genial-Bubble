@@ -21,7 +21,7 @@ public class ButtonActivate : MonoBehaviour
     {
         block.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         block.GetComponent<Rigidbody2D>().gravityScale = 1;
-        if (other.gameObject.CompareTag("GameController"))
+        if (other.gameObject.CompareTag("Projectile"))
         {
             rb=other.gameObject.GetComponent<Rigidbody2D>();
             rb.linearVelocity = Vector3.zero;
