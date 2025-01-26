@@ -37,7 +37,7 @@ public class ThrowedBubble : MonoBehaviour
             anim.Play("BubbleSpiderIdle");
             transform.position = collision.transform.position;
             rb.linearVelocity = new Vector2(0, 0.2f);
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            Death enemy = collision.gameObject.GetComponent<Death>();
             enemy.takeShot();
         }
     }
