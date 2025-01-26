@@ -69,6 +69,8 @@ public class PlayerDammage : MonoBehaviour
 
     void Respawn()
     {
+        GameObject mob = GameObject.Find("DoorSpider");
+        mob.GetComponent<Mob>().RespawnObject();
         transform.position = checkpoints.checkpointPos;
         transform.rotation = initialRotation;
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
