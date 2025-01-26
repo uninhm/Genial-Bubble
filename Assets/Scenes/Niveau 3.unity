@@ -8523,11 +8523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.03
+      value: -5.81
       objectReference: {fileID: 0}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.71
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10194,6 +10194,7 @@ GameObject:
   - component: {fileID: 1763240467}
   - component: {fileID: 1763240466}
   - component: {fileID: 1763240468}
+  - component: {fileID: 1763240469}
   m_Layer: 0
   m_Name: button_1
   m_TagString: Untagged
@@ -10400,7 +10401,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10416,6 +10417,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5903425, y: 0.15832138}
   m_EdgeRadius: 0
+--- !u!114 &1763240469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763240464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75079321772e054428edeb32b98d56ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToMove: {fileID: 2098030105}
+  moveDistance: 5
 --- !u!1 &1825192478
 GameObject:
   m_ObjectHideFlags: 0
