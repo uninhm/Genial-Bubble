@@ -17,6 +17,8 @@ public class FirstTriggerScript : Resetable
             moving = true;
             playerController = collider.gameObject.GetComponent<PlayerController>();
             playerController.stopped = true;
+            Rigidbody2D rb = collider.gameObject.GetComponent<Rigidbody2D>();
+            rb.linearVelocity = rb.linearVelocity * 0.1f;
             activated = true;
         }
     }
