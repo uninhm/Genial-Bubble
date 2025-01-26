@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
-    public void takeShot()
+    bool dead = false;
+
+    public bool IsDead()
     {
-        Destroy(gameObject);
+        return dead;
+    }
+    public void Die()
+    {
+        dead = true;
     }
 }
