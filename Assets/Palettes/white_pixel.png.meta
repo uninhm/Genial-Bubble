@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 76abe3ca6854af94788abab60805871d
+guid: 1f0297868a3dd6d45b652dbeaefe312f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4416627675790477072
-    second: ice_monster_walk_anim_frames_0
-  - first:
-      213: 6246218061622167648
-    second: ice_monster_walk_anim_frames_1
+      213: -4974691128028443999
+    second: white_pixel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,52 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ice_monster_walk_anim_frames_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 42
-        width: 31
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01786a888730b4d30800000000000000
-      internalID: 4416627675790477072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_monster_walk_anim_frames_1
+      name: white_pixel_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
-        width: 32
-        height: 21
+        y: 0
+        width: 1
+        height: 1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0684e90bb360fa650800000000000000
-      internalID: 6246218061622167648
+      spriteID: 1aac39ea6c856fab0800000000000000
+      internalID: -4974691128028443999
       vertices: []
       indices: 
       edges: []
@@ -173,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ice_monster_walk_anim_frames_0: 4416627675790477072
-      ice_monster_walk_anim_frames_1: 6246218061622167648
+      white_pixel_0: -4974691128028443999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

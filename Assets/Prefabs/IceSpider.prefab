@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3791481843319163208
+--- !u!1 &494339909775167755
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 279219717948967554}
-  - component: {fileID: 7070020119602364245}
-  - component: {fileID: 7711966153534773667}
-  - component: {fileID: -700930141222546679}
-  - component: {fileID: 7994666129007170713}
+  - component: {fileID: 7448307435547977812}
+  - component: {fileID: 4538437532147642622}
+  - component: {fileID: 4612689883251818270}
+  - component: {fileID: 2197528924683522520}
+  - component: {fileID: 2828054090819515392}
+  - component: {fileID: 2845356381020868395}
+  - component: {fileID: 4890968762678397285}
   m_Layer: 0
-  m_Name: Snowball
+  m_Name: IceSpider
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &279219717948967554
+--- !u!4 &7448307435547977812
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791481843319163208}
+  m_GameObject: {fileID: 494339909775167755}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 1.1, z: 0}
-  m_LocalScale: {x: 0.22, y: 0.22, z: 0.22}
+  m_LocalPosition: {x: 86.001, y: 2.53, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7070020119602364245
+--- !u!212 &4538437532147642622
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791481843319163208}
+  m_GameObject: {fileID: 494339909775167755}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,34 +80,34 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7607144487970100932, guid: d0beb13d7029cee4980cf205325053ce, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 4416627675790477072, guid: 76abe3ca6854af94788abab60805871d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 1.9}
+  m_Size: {x: 0.31, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7711966153534773667
+--- !u!50 &4612689883251818270
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791481843319163208}
+  m_GameObject: {fileID: 494339909775167755}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -116,14 +118,28 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &-700930141222546679
-CircleCollider2D:
+  m_Constraints: 4
+--- !u!114 &2197528924683522520
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791481843319163208}
+  m_GameObject: {fileID: 494339909775167755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f23bb9d9a98a44b94c2552ec63b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  distance: 0
+--- !u!60 &2828054090819515392
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494339909775167755}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -151,17 +167,62 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.0035758722}
-  m_Radius: 0.8784279
---- !u!114 &7994666129007170713
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.1, y: 2.1}
+    newSize: {x: 0.31, y: 0.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.34364074, y: 0.961563}
+      - {x: -0.7638025, y: 0.5568729}
+      - {x: -0.7709281, y: -0.018694207}
+      - {x: -1.2544668, y: -0.04892294}
+      - {x: -1.4657806, y: -0.33636788}
+      - {x: -1.4657725, y: -0.95735157}
+      - {x: 1.5626293, y: -0.9531405}
+      - {x: 1.5542179, y: -0.35007274}
+      - {x: 1.360782, y: -0.027027205}
+      - {x: 0.75375193, y: -0.021777153}
+      - {x: 0.75973076, y: 0.35462102}
+      - {x: 0.34364074, y: 0.96156305}
+  m_UseDelaunayMesh: 0
+--- !u!95 &2845356381020868395
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494339909775167755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a2b235d302f5694ba9034d8856aa9f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4890968762678397285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3791481843319163208}
+  m_GameObject: {fileID: 494339909775167755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9178ab2c0787bcf4287bff5681299d9b, type: 3}
+  m_Script: {fileID: 11500000, guid: e188b66154ed72b40a544161a565ddfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
