@@ -8,7 +8,13 @@ public class SnowmanThrow : MonoBehaviour
     public float fireRate = 0.5f; // Tirs par seconde
     private float nextFireTime = 0f;
     public Transform SnowmanHand;
+    Animator anim;
 
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Update()
     {
         if (Time.time >= nextFireTime)
@@ -20,6 +26,7 @@ public class SnowmanThrow : MonoBehaviour
     }
     void LaunchBall()
     {
+        anim.Play("SnowmanThrowing");
         GameObject ball = Instantiate(Snowball, SnowmanHand.position, Quaternion.identity);
         Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
 
