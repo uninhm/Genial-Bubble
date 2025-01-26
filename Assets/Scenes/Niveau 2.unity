@@ -11920,7 +11920,7 @@ PrefabInstance:
       objectReference: {fileID: 1731194259}
     - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: resetOnRespawn.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: 'resetOnRespawn.Array.data[0]'
@@ -11938,6 +11938,14 @@ PrefabInstance:
       propertyPath: 'resetOnRespawn.Array.data[3]'
       value: 
       objectReference: {fileID: 96351875}
+    - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: 'resetOnRespawn.Array.data[4]'
+      value: 
+      objectReference: {fileID: 420442583}
+    - target: {fileID: 3856042385326509508, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
+      propertyPath: 'resetOnRespawn.Array.data[5]'
+      value: 
+      objectReference: {fileID: 2050205639}
     - target: {fileID: 3917872446767802092, guid: a97cfe0ef75c77f4e8ca9a2b45e6a1a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.45
