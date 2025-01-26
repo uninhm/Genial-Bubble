@@ -34,11 +34,11 @@ public class ThrowedBubble : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            anim.Play("BubbleSpiderIdle");
-            transform.position = collision.transform.position;
-            rb.linearVelocity = new Vector2(0, 0.2f);
-            Death enemy = collision.gameObject.GetComponent<Death>();
-            enemy.takeShot();
+            GameObject enemy = collision.gameObject;
+            enemy.GetComponent<Animator>().Play("InsideBubble");
+            enemy.transform.position = transform.position;
+            Destroy(gameObject);
+            enemy.GetComponent<Death>().Die();
         }
     }
 }

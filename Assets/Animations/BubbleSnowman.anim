@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BubbleSpiderIdle
+  m_Name: BubbleSnowman
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,6 +23,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
         value: -0.1
         inSlope: 0
         outSlope: 0
@@ -42,15 +51,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -6874472881093601284, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
+      value: {fileID: 1528784807566925049, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
     - time: 0.25
-      value: {fileID: 4879991586372946988, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
+      value: {fileID: -5101362211604665962, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
     - time: 0.5
-      value: {fileID: -280250958319423221, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
+      value: {fileID: -5420358668546598092, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
     - time: 0.75
-      value: {fileID: 5232637532576373314, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
+      value: {fileID: 2130393876876712378, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
     - time: 1
-      value: {fileID: 5232637532576373314, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
+      value: {fileID: 2130393876876712378, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -65,15 +74,6 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 0
       attribute: 2336549521
       script: {fileID: 0}
       typeID: 50
@@ -81,12 +81,21 @@ AnimationClip:
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -6874472881093601284, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
-    - {fileID: 4879991586372946988, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
-    - {fileID: -280250958319423221, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
-    - {fileID: 5232637532576373314, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
-    - {fileID: 5232637532576373314, guid: 3b8cf1c6a86dae6499afce85d3d5cbc3, type: 3}
+    - {fileID: 1528784807566925049, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
+    - {fileID: -5101362211604665962, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
+    - {fileID: -5420358668546598092, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
+    - {fileID: 2130393876876712378, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
+    - {fileID: 2130393876876712378, guid: 48e20cc5ec6ae8d40952cc84078234d4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -114,6 +123,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
         value: -0.1
         inSlope: 0
         outSlope: 0
