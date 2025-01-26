@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5444358741572839239}
   - component: {fileID: 8475528124957681834}
   - component: {fileID: 1846553871264877914}
+  - component: {fileID: -4394646928638559690}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Enemy
@@ -130,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02f23bb9d9a98a44b94c2552ec63b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
   distance: 3
 --- !u!60 &8475528124957681834
 PolygonCollider2D:
@@ -213,3 +214,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4394646928638559690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411056575084817394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e188b66154ed72b40a544161a565ddfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
