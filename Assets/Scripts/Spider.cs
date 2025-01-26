@@ -12,11 +12,10 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
+        if (speed != 0)
+        {
         float pingPong = Mathf.PingPong(Time.time * speed, distance);
         transform.position = startPosition + Vector3.right * pingPong;
-    }
-    public void takeShot()
-    {
-        Destroy(gameObject);
+        }
     }
 }
