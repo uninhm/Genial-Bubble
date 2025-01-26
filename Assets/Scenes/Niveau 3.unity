@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 365989734}
   - component: {fileID: 365989733}
   - component: {fileID: 365989735}
+  - component: {fileID: 365989736}
   m_Layer: 0
   m_Name: moveable-spike_1
   m_TagString: Enemy
@@ -580,6 +581,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.896225, y: 0.3284769}
   m_EdgeRadius: 0
+--- !u!114 &365989736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365989731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1214a8da062c2294fb709a0d8800cab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wire: {fileID: 4341197360203293777}
 --- !u!1 &733374181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +2997,7 @@ GameObject:
   - component: {fileID: 1634291908}
   - component: {fileID: 1634291907}
   - component: {fileID: 1634291909}
+  - component: {fileID: 1634291910}
   m_Layer: 0
   m_Name: moveable_spike_2
   m_TagString: Enemy
@@ -3175,6 +3190,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9008713, y: 0.33678162}
   m_EdgeRadius: 0
+--- !u!114 &1634291910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634291905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1214a8da062c2294fb709a0d8800cab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wire: {fileID: 4341197360203293777}
 --- !u!1 &1726400262
 GameObject:
   m_ObjectHideFlags: 0
