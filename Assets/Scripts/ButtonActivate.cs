@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.WSA;
 
 public class ButtonActivate : MonoBehaviour
 {
@@ -7,12 +8,18 @@ public class ButtonActivate : MonoBehaviour
     private Vector3 initialPosition;
     private Quaternion initialRotation;
     private Collider2D buttonCollider;
+    private GameObject bubble;
 
     Activable[] activables;
 
     void Start()
     {
         activables = GetComponents<Activable>();
+    }
+
+    public bool IsActive()
+    {
+        return bubble != null;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +32,7 @@ public class ButtonActivate : MonoBehaviour
             buttonCollider = GetComponent<Collider2D>();
             initialPosition = buttonCollider.bounds.center;
             other.transform.position = initialPosition;
+            bubble = other.gameObject;
         }
     }
 }   
