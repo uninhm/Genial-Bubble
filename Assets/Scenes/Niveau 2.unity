@@ -7117,6 +7117,7 @@ MonoBehaviour:
   activated: 0
   spikes: {fileID: 65600941}
   delay: 1
+  disableTime: 3.5
 --- !u!114 &420442584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11523,7 +11524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1419717299715017299, guid: 42d6a83694dc0c34bb1d1cfa583b39e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 85.26
+      value: 85.49
       objectReference: {fileID: 0}
     - target: {fileID: 1419717299715017299, guid: 42d6a83694dc0c34bb1d1cfa583b39e0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12192,6 +12193,7 @@ MonoBehaviour:
   activated: 0
   spikes: {fileID: 1305046719}
   delay: 0
+  disableTime: 6
 --- !u!61 &2050205640
 BoxCollider2D:
   m_ObjectHideFlags: 0
