@@ -20,6 +20,11 @@ public class PlayerDammage : MonoBehaviour
     public Transform cam;
     private ParentCheckpointScript checkpoints;
     public Resetable[] resetOnRespawn;
+    Sprite initialSprite;
+    BoxCollider2D col;
+    Vector2 initialSize, initialOffset;
+
+
 
     void Start()
     {
@@ -27,6 +32,10 @@ public class PlayerDammage : MonoBehaviour
         initialRotation = transform.rotation;
         spriteRenderer = GetComponent<SpriteRenderer>();
         checkpoints = GameObject.Find("Checkpoints").GetComponent<ParentCheckpointScript>();
+        initialSprite = spriteRenderer.sprite;
+        col = GetComponent<BoxCollider2D>();
+        initialOffset = col.offset;
+        initialSize = col.size;
     }
 
     void Update()
@@ -65,6 +74,9 @@ public class PlayerDammage : MonoBehaviour
         transform.position = checkpoints.checkpointPos;
         transform.rotation = initialRotation;
         spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+        spriteRenderer.sprite = initialSprite;
+        col.size = initialSize;
+        col.offset = initialOffset;
         gameObject.SetActive(true);
         isWaitingToRespawn = false;
         cam.position = checkpoints.cameraPos;
