@@ -6,7 +6,6 @@ public class FallingFloorController : Resetable
     Vector3 origPos;
     Quaternion origRot;
     Rigidbody2D rb;
-    bool invoked = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,26 +23,23 @@ public class FallingFloorController : Resetable
 
     void Fall()
     {
-        if (invoked) rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Player" && collision.transform.position.y > rb.position.y)
-        {
-            invoked = true;
             Invoke("Fall", delay);
-        }
         if (collision.gameObject.name == "Killer")
             gameObject.SetActive(false);
     }
 
     override public void Reset()
     {
+        CancelInvoke();
         gameObject.SetActive(true);
         transform.position = origPos;
         transform.rotation = origRot;
         rb.bodyType = RigidbodyType2D.Kinematic;
-        invoked = false;
-    } 
+    }
 }

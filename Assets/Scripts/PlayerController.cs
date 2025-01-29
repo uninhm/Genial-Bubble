@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -88,14 +87,15 @@ public class PlayerController : MonoBehaviour
             }
             if (moveAction.IsPressed())
             {
-                rb.AddForce(moveAction.ReadValue<Vector2>() * playerSpeed);
+                if (moveAction.ReadValue<Vector2>().x > 0)
+                    rb.AddForce(Vector2.right * playerSpeed * 1000 * Time.deltaTime);
+                if (moveAction.ReadValue<Vector2>().x < 0)
+                    rb.AddForce(Vector2.left * playerSpeed * 1000 * Time.deltaTime);
                 if (moveAction.ReadValue<Vector2>().x > 0)
                     direction = 1;
                 else direction = -1;
                 tr.localScale = new Vector3(direction, 1, 1);
-            }
-            else
-            {
+            } else {
                 Vector2 vel2 = rb.linearVelocity;
                 vel2.x = (float)(vel2.x - vel2.x * 1.5 * Time.deltaTime);
             }

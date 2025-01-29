@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 25
-  playerSpeed: 10
+  playerSpeed: 5
   maxSpeed: 6
   floorDistance: 0.9
   stopped: 0
@@ -226,6 +226,7 @@ MonoBehaviour:
   respawnDelay: 0
   fadeOutDuration: 1
   cam: {fileID: 0}
+  resetOnRespawn: []
 --- !u!1 &8280563827068680986
 GameObject:
   m_ObjectHideFlags: 0

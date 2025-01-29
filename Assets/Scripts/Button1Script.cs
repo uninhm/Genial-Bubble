@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Button1Script : Activable
@@ -29,6 +28,7 @@ public class Button1Script : Activable
     public override void Reset()
     {
         base.Reset();
+        CancelInvoke();
         ActivateSpikes();
     }
 }
